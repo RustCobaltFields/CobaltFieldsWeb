@@ -9,11 +9,11 @@
 }
 
 .titleContainer {
-    height: 10%;
+    height: auto;
     text-align: center;
     width: 100%;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 3vw;
     padding: 1rem;
 }
 .titleStaticPart {
@@ -22,3 +22,29 @@
 .titleDynamicPart {
     color: var(--accent_color);
 }
+
+.serverTitle {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 1rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: black;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+

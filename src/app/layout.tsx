@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/style/globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
     title: "Cobalt Fields",
-    description: "High quality Rust servers",
+    description: "Качественные ванильные сервера Rust",
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
