@@ -1,0 +1,24 @@
+.pageContainer {
+    font-size: 10px;
+    margin-top: var(--header_height);
+    height: calc(100vh - var(--header_height));
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContainer {
+    height: 10%;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 1rem;
+}
+.titleStaticPart {
+
+}
+.titleDynamicPart {
+    color: var(--accent_color);
+}

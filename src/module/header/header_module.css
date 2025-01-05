@@ -1,0 +1,7 @@
+.headerContainer {
+    background: black;
+    position: fixed;
+    width: 100%;
+    height: var(--header_height);
+    top: 0;
+}

@@ -8,14 +8,23 @@
 /*}*/
 
 /*@media (prefers-color-scheme: dark) {*/
-  :root {
-    --background: #0f0f0f;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #141414;
+        --foreground: #ededed;
+        --accent_color: #03a7ff;
+        --header_height: 6vh;
+    }
 /*}*/
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Inter, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Inter, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.rootContainer {
 }
