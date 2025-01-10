@@ -23,7 +23,16 @@ export default async function Page() {
                 Cobalt Fields
             </div>
             {/*<DynamicTitle/>*/}
-            <TypeWriter strings={typeWriterStrings} delayAfterDelete={1000} delayAfterPrint={1000} delayBetweenSymbol={100} />
+            <div className="titleContainer">
+                <span className="titleStaticPart">На нашем сервере </span>
+                <TypeWriter
+                    strings={typeWriterStrings}
+                    delayAfterDelete={500}
+                    delayAfterPrint={500}
+                    delayBetweenSymbol={75}
+                    wrapperClassName={"titleDynamicPart"}
+                />
+            </div>
         </div>
     </>
 }

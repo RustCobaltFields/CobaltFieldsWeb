@@ -23,8 +23,8 @@ export default function TypeWriter(
         delayAfterPrint,
         delayBetweenSymbol,
         debug = false,
-        wrapperClassName = undefined,
-        cursorClassName = undefined
+        wrapperClassName = "type_writer_wrapper",
+        cursorClassName = "cursor"
     }: DynamicTypingTextProps
 ) {
     const [displayedText, setDisplayedText] = useState("")
@@ -75,8 +75,8 @@ export default function TypeWriter(
             clearTimeout(updateTimeout);
         }
     }, [delay]);
-    return <span className={wrapperClassName != undefined ? wrapperClassName : ""}>
+    return <span className={wrapperClassName}>
         {displayedText}
-        {isCursor ? <span className={cursorClassName != undefined ? cursorClassName : "cursor"}>|</span> : <></>}
+        {isCursor ? <span className={cursorClassName}>|</span> : <></>}
     </span>
 }
