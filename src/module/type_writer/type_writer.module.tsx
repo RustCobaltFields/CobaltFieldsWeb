@@ -2,7 +2,6 @@
 
 import {useEffect, useState} from "react";
 import "./type_writer_module.css";
-import {string} from "postcss-selector-parser";
 
 interface DynamicTypingTextProps {
     strings: Array<string>,
