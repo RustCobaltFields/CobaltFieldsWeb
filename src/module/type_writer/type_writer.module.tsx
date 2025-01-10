@@ -45,7 +45,13 @@ export default function TypeWriter(
             })
             if (displayedText === "") {
                 setIsDeleting(false);
-                setCurrentTextIndex((prevState: number) => {return prevState + 1})
+                setCurrentTextIndex((prevState: number) => {
+                    if (prevState + 1 < strings.length) {
+                        return prevState + 1;
+                    } else {
+                        return 0;
+                    }
+                })
                 // setTimeout(update, delayAfterDelete);
                 setDelay(delayAfterDelete);
                 return;
