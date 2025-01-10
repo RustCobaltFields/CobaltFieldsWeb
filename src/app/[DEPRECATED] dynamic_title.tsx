@@ -1,8 +1,5 @@
 "use client"
 
-//TODO: вынести стили dynamic_title в отдельный файл
-//TODO: (возможно) сделать полноценный модуль dynamic_title с параметрами
-
 import {useEffect, useState} from "react";
 
 const dynamicPartTexts = [
